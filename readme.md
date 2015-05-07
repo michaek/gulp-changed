@@ -86,6 +86,12 @@ Function that determines whether the source file is different from the destinati
 - `changed.compareLastModifiedTime`
 - `changed.compareSha1Digest`
 
+###### Utility functions
+
+- `changed.fsOperationFailed`
+  - Useful within custom comparator functions, adding files that don't exist to the output stream
+  - fsOperationFailed(stream, sourceFile, err)
+
 ###### Example
 
 ```js
